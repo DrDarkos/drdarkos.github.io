@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое Портфолио</title>
+    <title>РњРѕРµ РџРѕСЂС‚С„РѕР»РёРѕ</title>
     <style>
-        /* Общие стили */
-        body {
-            font-family: Arial, sans-serif;
+        /* РћР±С‰РёРµ СЃС‚РёР»Рё */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        /* Стили для шапки */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* РЎС‚РёР»Рё РґР»СЏ С€Р°РїРєРё */
         header {
             background-color: #333;
             color: #fff;
@@ -41,7 +50,7 @@
             text-decoration: underline;
         }
 
-        /* Стили для секций */
+        /* РЎС‚РёР»Рё РґР»СЏ СЃРµРєС†РёР№ */
         section {
             padding: 60px 20px;
             max-width: 800px;
@@ -54,7 +63,7 @@
             color: #333;
         }
 
-        /* Стили для проектов */
+        /* РЎС‚РёР»Рё РґР»СЏ РїСЂРѕРµРєС‚РѕРІ */
         .project {
             margin-bottom: 40px;
         }
@@ -88,7 +97,7 @@
             text-decoration: underline;
         }
 
-        /* Стили для списка навыков */
+        /* РЎС‚РёР»Рё РґР»СЏ СЃРїРёСЃРєР° РЅР°РІС‹РєРѕРІ */
         #skills ul {
             list-style: none;
             padding: 0;
@@ -105,7 +114,7 @@
             color: #333;
         }
 
-        /* Стили для формы контактов */
+        /* РЎС‚РёР»Рё РґР»СЏ С„РѕСЂРјС‹ РєРѕРЅС‚Р°РєС‚РѕРІ */
         form {
             display: flex;
             flex-direction: column;
@@ -145,18 +154,17 @@
             background-color: #555;
         }
 
-        /* Стили для футера */
+        /* РЎС‚РёР»Рё РґР»СЏ С„СѓС‚РµСЂР° */
         footer {
             background-color: #f4f4f4;
             text-align: center;
             padding: 20px 0;
             color: #666;
-            position: fixed;
             width: 100%;
-            bottom: 0;
+            margin-top: auto;
         }
 
-        /* Адаптивные стили */
+        /* РђРґР°РїС‚РёРІРЅС‹Рµ СЃС‚РёР»Рё */
         @media (max-width: 600px) {
             nav ul li {
                 display: block;
@@ -176,69 +184,69 @@
 </head>
 <body>
     <header>
-        <h1>Ваше Имя</h1>
+        <h1>Р’Р°С€Рµ РРјСЏ</h1>
         <nav>
             <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#skills">Навыки</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#about">РћР±Рѕ РјРЅРµ</a></li>
+                <li><a href="#projects">РџСЂРѕРµРєС‚С‹</a></li>
+                <li><a href="#skills">РќР°РІС‹РєРё</a></li>
+                <li><a href="#contact">РљРѕРЅС‚Р°РєС‚С‹</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-        <h2>Обо мне</h2>
-        <p>Краткая информация о вас. Ваш опыт, образование, интересы.</p>
+        <h2>РћР±Рѕ РјРЅРµ</h2>
+        <p>РљСЂР°С‚РєР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РІР°СЃ. Р’Р°С€ РѕРїС‹С‚, РѕР±СЂР°Р·РѕРІР°РЅРёРµ, РёРЅС‚РµСЂРµСЃС‹.</p>
     </section>
 
     <section id="projects">
-        <h2>Проекты</h2>
+        <h2>РџСЂРѕРµРєС‚С‹</h2>
         <div class="project">
-            <h3>Название проекта 1</h3>
-            <img src="images/project1.jpg" alt="Проект 1">
-            <p>Описание проекта 1.</p>
-            <a href="#">Смотреть проект</a>
+            <h3>РќР°Р·РІР°РЅРёРµ РїСЂРѕРµРєС‚Р° 1</h3>
+            <img src="images/project1.jpg" alt="РџСЂРѕРµРєС‚ 1">
+            <p>РћРїРёСЃР°РЅРёРµ РїСЂРѕРµРєС‚Р° 1.</p>
+            <a href="#">РЎРјРѕС‚СЂРµС‚СЊ РїСЂРѕРµРєС‚</a>
         </div>
         <div class="project">
-            <h3>Название проекта 2</h3>
-            <img src="images/project2.jpg" alt="Проект 2">
-            <p>Описание проекта 2.</p>
-            <a href="#">Смотреть проект</a>
+            <h3>РќР°Р·РІР°РЅРёРµ РїСЂРѕРµРєС‚Р° 2</h3>
+            <img src="images/project2.jpg" alt="РџСЂРѕРµРєС‚ 2">
+            <p>РћРїРёСЃР°РЅРёРµ РїСЂРѕРµРєС‚Р° 2.</p>
+            <a href="#">РЎРјРѕС‚СЂРµС‚СЊ РїСЂРѕРµРєС‚</a>
         </div>
-        <!-- Добавьте больше проектов по аналогии -->
+        <!-- Р”РѕР±Р°РІСЊС‚Рµ Р±РѕР»СЊС€Рµ РїСЂРѕРµРєС‚РѕРІ РїРѕ Р°РЅР°Р»РѕРіРёРё -->
     </section>
 
     <section id="skills">
-        <h2>Навыки</h2>
+        <h2>РќР°РІС‹РєРё</h2>
         <ul>
-            <li>Навык 1</li>
-            <li>Навык 2</li>
-            <li>Навык 3</li>
-            <li>Навык 4</li>
-            <li>Навык 5</li>
-            <!-- Добавьте больше навыков -->
+            <li>РќР°РІС‹Рє 1</li>
+            <li>РќР°РІС‹Рє 2</li>
+            <li>РќР°РІС‹Рє 3</li>
+            <li>РќР°РІС‹Рє 4</li>
+            <li>РќР°РІС‹Рє 5</li>
+            <!-- Р”РѕР±Р°РІСЊС‚Рµ Р±РѕР»СЊС€Рµ РЅР°РІС‹РєРѕРІ -->
         </ul>
     </section>
 
     <section id="contact">
-        <h2>Контакты</h2>
+        <h2>РљРѕРЅС‚Р°РєС‚С‹</h2>
         <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-            <label for="name">Имя:</label>
+            <label for="name">РРјСЏ:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Сообщение:</label>
+            <label for="message">РЎРѕРѕР±С‰РµРЅРёРµ:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Отправить</button>
+            <button type="submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+        <p>&copy; 2024 Р’Р°С€Рµ РРјСЏ. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</p>
     </footer>
 </body>
 </html>
