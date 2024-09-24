@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио - Стебеляк Дмитрий</title>
+    <meta name="description" content="Портфолио Дмитрия Стебеляка, инженер-программист с опытом работы в IT и поддержке образовательных учреждений.">
+    <meta name="keywords" content="Дмитрий Стебеляк, портфолио, инженер-программист, IT, навыки, опыт работы">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         /* Общие стили */
         html, body {
@@ -14,20 +17,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-			background-image: url('images/background.jpg'); /* Добавлено фоновое изображение */
+            background-image: url('images/background.jpg'); /* Добавлено фоновое изображение */
             background-size: cover; /* Обеспечивает полное покрытие фона */
             background-position: center; /* Центрирует изображение */
-            background-repeat: repeat; /* Повторяет изображение */
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
+            background-repeat: no-repeat; /* Не повторяет изображение */
         }
 
         /* Стили для шапки */
         header {
-				background-color: rgba(51, 51, 51, 0.8);
+            background-color: rgba(51, 51, 51, 0.8);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -58,7 +56,6 @@
         section {
             padding: 20px; /* Отступы для контента */
             width: 80%; /* Фиксированная ширина секций */
-            
             margin: 20px auto; /* Центрирование секций с отступами */
             background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для секций */
             border-radius: 8px; /* Закругленные углы для секций */
@@ -141,6 +138,43 @@
             margin-top: auto;
         }
 
+/* Стили для секции "Навыки" */
+#skills ul li {
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #333;
+    transition: transform 0.3s ease; /* Плавный переход для трансформации */
+}
+
+#skills ul li:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Добавляем тень при наведении */
+}
+        /* Стили для секции "Обо мне" */
+        #about {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center; /* Выравнивает элементы по вертикали */
+            justify-content: center; /* Центрирует содержимое по горизонтали */
+            gap: 20px; /* Добавляем отступ между изображением и текстом */
+        }
+
+        .profile-img {
+            width: 150px; /* Задаем фиксированную ширину для изображения */
+            height: auto; /* Сохраняем оригинальные пропорции изображения */
+        }
+
+        #about p {
+            max-width: 600px; /* Максимальная ширина текста */
+            text-align: left; /* Выравнивание текста по левому краю */
+        }
+
         /* Адаптивные стили */
         @media (max-width: 600px) {
             nav ul li {
@@ -156,41 +190,18 @@
             form {
                 padding: 0 10px;
             }
+
+            .about-container {
+                flex-direction: column; /* Для маленьких экранов выстраиваем элементы вертикально */
+                text-align: center; /* Центрируем текст */
+            }
+        }
+
+        /* Плавная прокрутка */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
-	<style>
-    /* Стили для секции "Обо мне" */
-    #about {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .about-container {
-        display: flex;
-        align-items: center; /* Выравнивает элементы по вертикали */
-        justify-content: center; /* Центрирует содержимое по горизонтали */
-        gap: 20px; /* Добавляем отступ между изображением и текстом */
-    }
-
-    .profile-img {
-        width: 150px; /* Задаем фиксированную ширину для изображения */
-        height: auto; /* Сохраняем оригинальные пропорции изображения */
-    }
-
-    #about p {
-        max-width: 600px; /* Максимальная ширина текста */
-        text-align: left; /* Выравнивание текста по левому краю */
-    }
-
-    /* Адаптивные стили для мобильных устройств */
-    @media (max-width: 600px) {
-        .about-container {
-            flex-direction: column; /* Для маленьких экранов выстраиваем элементы вертикально */
-            text-align: center; /* Центрируем текст */
-        }
-    }
-</style>
-
 </head>
 <body>
     <header>
@@ -205,68 +216,70 @@
         </nav>
     </header>
 
-<section id="about">
-    <h2>Обо мне</h2>
-    <div class="about-container">
-        <!-- Изображение -->
-        <img src="images/profile.jpeg" alt="Дмитрий Стебеляк" class="profile-img">
-        <!-- Текст -->
-        <p>Я Дмитрий Стебеляк, инженер-программист с опытом работы в области IT и поддержки образовательных учреждений. Я специализируюсь на установке и обслуживании программного обеспечения, настройке антивирусных систем и помощи пользователям в решении технических вопросов. Я окончил Дальневосточный федеральный университет со степенью информатика-экономиста и постоянно совершенствую свои навыки в IT сфере.</p>
-    </div>
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <div class="about-container">
+                <img src="images/profile.jpeg" alt="Дмитрий Стебеляк" class="profile-img">
+                <p>Я Дмитрий Стебеляк, инженер-программист с опытом работы в области IT и поддержки образовательных учреждений. Я специализируюсь на установке и обслуживании программного обеспечения, настройке антивирусных систем и помощи пользователям в решении технических вопросов. Я окончил Дальневосточный федеральный университет со степенью информатика-экономиста и постоянно совершенствую свои навыки в IT сфере.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+    <h2>Навыки</h2>
+    <ul>
+        <li>MS Office (Word, Excel, PowerPoint, Outlook, Access)</li>
+        <li>Adobe Photoshop, Adobe Illustrator</li>
+        <li>Sony Vegas, DaVinci Resolve</li>
+        <li>Установка и обслуживание ПО</li>
+        <li>Настройка сетей и антивирусных систем</li>
+    </ul>
 </section>
 
+        <section id="experience">
+            <h2>Опыт работы</h2>
+            <h3>Инженер-программист в МАУ ДО «ДШИ» г. Корсаков</h3>
+            <p>Период работы: с октября 2016 г. по настоящее время</p>
+            <p>Обязанности:</p>
+            <ul>
+                <li>Ведение школьного сайта и социальных сетей</li>
+                <li>Анализ потребностей школы в IT и предложение новых решений</li>
+                <li>Консультирование и помощь персоналу по вопросам работы с IT-оборудованием</li>
+                <li>Установка, настройка и обслуживание ПО и антивирусных систем</li>
+            </ul>
 
-    <section id="skills">
-        <h2>Навыки</h2>
-        <ul>
-            <li>MS Office (Word, Excel, PowerPoint, Outlook, Access)</li>
-            <li>Adobe Photoshop, Adobe Illustrator</li>
-            <li>Sony Vegas, DaVinci Resolve</li>
-            <li>Установка и обслуживание ПО</li>
-            <li>Настройка сетей и антивирусных систем</li>
-        </ul>
-    </section>
+            <h3>Техник в МАОУ «СОШ №2» г. Корсаков</h3>
+            <p>Период работы: с октября 2015 г. по январь 2017</p>
+            <p>Обязанности:</p>
+            <ul>
+                <li>Ведение школьного сайта и социальных сетей</li>
+                <li>Поддержка и обслуживание компьютерного парка</li>
+                <li>Консультирование учеников и учителей по вопросам IT</li>
+            </ul>
+        </section>
 
-    <section id="experience">
-        <h2>Опыт работы</h2>
-        <h3>Инженер-программист в МАУ ДО «ДШИ» г. Корсаков</h3>
-        <p>Период работы: с октября 2016 г. по настоящее время</p>
-        <p>Обязанности:</p>
-        <ul>
-            <li>Ведение школьного сайта и социальных сетей</li>
-            <li>Анализ потребностей школы в IT и предложение новых решений</li>
-            <li>Консультирование и помощь персоналу по вопросам работы с IT-оборудованием</li>
-            <li>Установка, настройка и обслуживание ПО и антивирусных систем</li>
-        </ul>
-
-        <h3>Техник в МАОУ «СОШ №2» г. Корсаков</h3>
-        <p>Период работы: с октября 2015 г. по январь 2017</p>
-        <p>Обязанности:</p>
-        <ul>
-            <li>Ведение школьного сайта и социальных сетей</li>
-            <li>Поддержка и обслуживание компьютерного парка</li>
-            <li>Консультирование учеников и учителей по вопросам IT</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <form action="mailto:hagoloec@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Стебеляк Дмитрий. Все права защищены.</p>
+        <p>Социальные сети: 
+            <a href="https://vk.com/dark0s" target="_blank">VK</a>, 
+        </p>
     </footer>
 </body>
 </html>
