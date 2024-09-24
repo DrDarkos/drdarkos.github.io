@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Стебеляк Дмитрий</title>
+    <style>
+        /* Общие стили */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+			background-image: url('images/background.jpg'); /* Добавлено фоновое изображение */
+            background-size: cover; /* Обеспечивает полное покрытие фона */
+            background-position: center; /* Центрирует изображение */
+            background-repeat: repeat; /* Повторяет изображение */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Стили для шапки */
+        header {
+				background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стили для секций */
+        section {
+            padding: 20px; /* Отступы для контента */
+            width: 80%; /* Фиксированная ширина секций */
+            
+            margin: 20px auto; /* Центрирование секций с отступами */
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для секций */
+            border-radius: 8px; /* Закругленные углы для секций */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для улучшения восприятия */
+            display: flex; /* Используем flex для центрирования контента */
+            flex-direction: column; /* Выравнивание по вертикали */
+            justify-content: center; /* Центрирование контента */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Стили для списка навыков */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills ul li {
+            background-color: #f4f4f4;
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: #333;
+        }
+
+        /* Стили для формы контактов */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Стили для футера */
+        footer {
+            background-color: rgba(244, 244, 244, 0.9); /* Полупрозрачный фон для футера */
+            text-align: center;
+            padding: 20px 0;
+            color: #666;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            form {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Стебеляк Дмитрий</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#experience">Опыт работы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="about">
+    <h2>Обо мне</h2>
+    <img src="images/profile.jpeg" alt="Дмитрий Стебеляк" style="width:150px; border-radius: 10%;">
+        <p>Я Дмитрий Стебеляк, инженер-программист с опытом работы в области IT и поддержки образовательных учреждений. Я специализируюсь на установке и обслуживании программного обеспечения, настройке антивирусных систем и помощи пользователям в решении технических вопросов. Я окончил Дальневосточный федеральный университет со степенью информатика-экономиста и постоянно совершенствую свои навыки в IT сфере.</p>
+</section>
+
+
+    <section id="skills">
+        <h2>Навыки</h2>
+        <ul>
+            <li>MS Office (Word, Excel, PowerPoint, Outlook, Access)</li>
+            <li>Adobe Photoshop, Adobe Illustrator</li>
+            <li>Sony Vegas, DaVinci Resolve</li>
+            <li>Установка и обслуживание ПО</li>
+            <li>Настройка сетей и антивирусных систем</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Опыт работы</h2>
+        <h3>Инженер-программист в МАУ ДО «ДШИ» г. Корсаков</h3>
+        <p>Период работы: с октября 2016 г. по настоящее время</p>
+        <p>Обязанности:</p>
+        <ul>
+            <li>Ведение школьного сайта и социальных сетей</li>
+            <li>Анализ потребностей школы в IT и предложение новых решений</li>
+            <li>Консультирование и помощь персоналу по вопросам работы с IT-оборудованием</li>
+            <li>Установка, настройка и обслуживание ПО и антивирусных систем</li>
+        </ul>
+
+        <h3>Техник в МАОУ «СОШ №2» г. Корсаков</h3>
+        <p>Период работы: с октября 2015 г. по январь 2017</p>
+        <p>Обязанности:</p>
+        <ul>
+            <li>Ведение школьного сайта и социальных сетей</li>
+            <li>Поддержка и обслуживание компьютерного парка</li>
+            <li>Консультирование учеников и учителей по вопросам IT</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form action="mailto:hagoloec@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Стебеляк Дмитрий. Все права защищены.</p>
+    </footer>
+</body>
+</html>
